@@ -5,6 +5,10 @@
   --color-focus: oklch(30.919% 0.00004 271.152);
 }
 
+@utility custom-shadow-1 {
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.4);
+}
+
 @layer base {
   body {
     @apply pt-4 bg-black;
@@ -25,6 +29,6 @@
   }
 
   .post {
-    @apply bg-bg-default;
+    @apply bg-bg-default custom-shadow-1;
   }
 }
