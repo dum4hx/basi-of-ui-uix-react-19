@@ -2,7 +2,7 @@ export default function PostDropdown({ defaultVal, title, options }: { defaultVa
   return (
     <div className="post-child-container">
       <h3 className="font-semi">{title}</h3>
-      <select name="appUsage" id="appUsage" defaultValue={defaultVal} className="post-select">
+      <select name={defaultVal} id={defaultVal} defaultValue={defaultVal} className="post-select">
         <option value={defaultVal}>{defaultVal}</option>
         {options.map((option, index) => (
           <option key={index}>{option}</option>
